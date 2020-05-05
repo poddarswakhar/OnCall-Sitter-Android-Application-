@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawerId">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".list_view">
+        <RelativeLayout
+            android:id="@+id/relLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/grad"
+            android:paddingBottom="8dp">
+            <RelativeLayout
+                android:id="@+id/imgUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/circle_border">
+                <ImageView
+                    android:id="@+id/profileImage"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:adjustViewBounds="true"
+                    android:layout_margin="9dp"
+                    android:padding="3dp"
+                    android:background="@drawable/circle"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/circle_cropped"
+                    ></ImageView>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/userName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imgUser"
+                android:layout_centerHorizontal="true"
+                android:text="Katrina Kaif"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                app:fontFamily="@font/ubuntu_bold" />
+
+            <TextView
+                android:id="@+id/address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/userName"
+                android:layout_centerHorizontal="true"
+                android:text="Kelowna, British Columbia"
+                android:textColor="@color/address"
+                android:textSize="15sp"
+                app:fontFamily="@font/ubuntu_bold_italic" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/relLayout"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@color/followersBg"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="20dp"
+                        android:text="Bio:"
+                        android:textColor="@color/white"
+                        android:textSize="20dp"
+                        app:fontFamily="@font/ubuntu_bold" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="5dp"
+                        android:text="Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical."
+                        android:textColor="@color/white"
+                        android:textSize="15dp"
+                        app:fontFamily="@font/ubuntu_light" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@color/followingBg"
+                android:orientation="vertical"
+                android:paddingLeft="15dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Category: "
+                        android:textColor="@color/white"
+                        android:textSize="14dp"
+                        app:fontFamily="@font/ubuntu_bold" />
+
+                    <TextView
+                        android:id="@+id/profileCat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Baby-sitter"
+                        android:textColor="@color/white"
+                        android:textSize="14dp"
+                        app:fontFamily="@font/ubuntu_light_italic" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Certification: "
+                        android:textColor="@color/white"
+                        android:textSize="14dp"
+                        app:fontFamily="@font/ubuntu_bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Yes"
+                        android:textColor="@color/white"
+                        android:textSize="14dp"
+                        app:fontFamily="@font/ubuntu_light_italic" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Wages: "
+                        android:textColor="@color/white"
+                        android:textSize="14dp"
+                        app:fontFamily="@font/ubuntu_bold" />
+
+                    <TextView
+                        android:id="@+id/sitterRate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$20/hour "
+                        android:textColor="@color/white"
+                        android:textSize="14dp"
+                        app:fontFamily="@font/ubuntu_light_italic" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Availabilty: "
+                        android:textColor="@color/white"
+                        android:textSize="14dp"
+                        app:fontFamily="@font/ubuntu_bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Open Availability"
+                        android:textColor="@color/white"
+                        android:textSize="14dp"
+                        app:fontFamily="@font/ubuntu_light_italic" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/reviewId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_below="@id/description">
+
+            <TextView
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/textview_border"
+                android:text="Reviews:"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                android:gravity="center"
+                app:fontFamily="@font/ubuntu_bold" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/reviewId"
+            android:orientation="horizontal"
+            android:id="@+id/pieChartLayout">
+            <com.github.mikephil.charting.charts.PieChart
+                android:layout_width="200dp"
+                android:layout_height="280dp"
+                android:id="@+id/pieChart">
+            </com.github.mikephil.charting.charts.PieChart>
+            <ScrollView
+                android:layout_width="200dp"
+                android:layout_height="280dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="15dp"
+                        android:text="User 1:"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        app:fontFamily="@font/ubuntu_light" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="5dp"
+                        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod"
+                        android:textColor="#000000"
+                        android:textSize="15dp"
+                        app:fontFamily="@font/ubuntu_light" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="15dp"
+                        android:text="User 2:"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        app:fontFamily="@font/ubuntu_light" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="5dp"
+                        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod"
+                        android:textColor="#000000"
+                        android:textSize="15dp"
+                        app:fontFamily="@font/ubuntu_light" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="15dp"
+                        android:text="User 3:"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        app:fontFamily="@font/ubuntu_light" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="5dp"
+                        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod"
+                        android:textColor="#000000"
+                        android:textSize="15dp"
+                        app:fontFamily="@font/ubuntu_light" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="15dp"
+                        android:text="User 4:"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        app:fontFamily="@font/ubuntu_light" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="5dp"
+                        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod"
+                        android:textColor="#000000"
+                        android:textSize="15dp"
+                        app:fontFamily="@font/ubuntu_light" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="15dp"
+                        android:text="User 5:"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        app:fontFamily="@font/ubuntu_light" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="5dp"
+                        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod"
+                        android:textColor="#000000"
+                        android:textSize="15dp"
+                        app:fontFamily="@font/ubuntu_light" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="15dp"
+                        android:text="User 6:"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        app:fontFamily="@font/ubuntu_light" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="5dp"
+                        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod"
+                        android:textColor="#000000"
+                        android:textSize="15dp"
+                        app:fontFamily="@font/ubuntu_light" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="15dp"
+                        android:text="User 7:"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        app:fontFamily="@font/ubuntu_light" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="5dp"
+                        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod"
+                        android:textColor="#000000"
+                        android:textSize="15dp"
+                        app:fontFamily="@font/ubuntu_light" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="15dp"
+                        android:text="User 8:"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        app:fontFamily="@font/ubuntu_light" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="5dp"
+                        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod"
+                        android:textColor="#000000"
+                        android:textSize="15dp"
+                        app:fontFamily="@font/ubuntu_light" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="15dp"
+                        android:text="User 9:"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        app:fontFamily="@font/ubuntu_light" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="5dp"
+                        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod"
+                        android:textColor="#000000"
+                        android:textSize="15dp"
+                        app:fontFamily="@font/ubuntu_light" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="15dp"
+                        android:text="User 10:"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        app:fontFamily="@font/ubuntu_light" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="5dp"
+                        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod"
+                        android:textColor="#000000"
+                        android:textSize="15dp"
+                        app:fontFamily="@font/ubuntu_light" />
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pieChartLayout">
+            <Button
+                android:id="@+id/profileButton"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:layout_centerVertical="true"
+                android:text="@string/profileButton"
+                android:textColor="#FFFFFF"
+                android:onClick="selectSitterProfile"
+                android:background="@drawable/generic_button"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:menu="@menu/navigation_menu"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/navigation_header">
+    </com.google.android.material.navigation.NavigationView>
+</androidx.drawerlayout.widget.DrawerLayout>

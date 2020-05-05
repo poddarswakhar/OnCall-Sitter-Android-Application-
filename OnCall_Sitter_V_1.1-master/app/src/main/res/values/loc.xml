@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Div">
+        <item>Select a Location</item>
+        <item>Kelowna</item>
+        <item>West Kelowna</item>
+        <item>Vernon</item>
+
+    </string-array>
+
+
+
+</resources>

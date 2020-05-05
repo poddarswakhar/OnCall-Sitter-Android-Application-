@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Division">
+        <item>Select a Category</item>
+        <item>Baby Sitter</item>
+        <item>Pet Sitter</item>
+        <item>Care Aid Sitter</item>
+
+    </string-array>
+
+
+
+</resources>

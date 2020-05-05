@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/dialog_info"
+        android:layout_width="match_parent"
+        android:layout_height="96dp"
+        android:fontFamily="@font/ubuntu_bold"
+        android:gravity="center"
+
+        android:padding="10dp"
+        android:text="Confirm Payment?"
+        android:textSize="24sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/dialog_info">
+
+        <Button
+            android:id="@+id/dialog_cancel"
+            android:layout_width="220dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.50"
+            android:background="@drawable/blackkk"
+            android:fontFamily="@font/ubuntu_bold"
+            android:onClick="cancel"
+            android:text="Cancel"
+            android:textColor="	#FFFFFF" />
+
+        <Button
+            android:id="@+id/dialog_cance2"
+            android:layout_width="227dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.50"
+            android:background="@drawable/blackkk"
+            android:fontFamily="@font/ubuntu_bold"
+            android:onClick="proc"
+            android:text="Proceed"
+            android:textColor="	#FFFFFF" />
+
+    </LinearLayout>
+</RelativeLayout>
